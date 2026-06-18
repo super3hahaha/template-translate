@@ -62,7 +62,9 @@ tester-app 写一个 JSON 文件，路径通过 prompt 传给 skill。结构：
 | | | pl | 波兰 | zh-rCN | 简体中文 |
 | | | | | zh-rTW | 繁体中文 |
 
-注意 `in`=印尼语（Android 码，不是 `id`）、`zh-rCN`/`zh-rTW` 是 Android 资源码。**输出 key 必须与 `target_langs` 里给的码一字不差**（含 `zh-rCN`/`zh-rTW`/`in`）。
+还可能出现更多 Android 资源码（app 端可勾选的扩展语言）：`bn`=孟加拉、`da`=丹麦、`el`=希腊、`fi`=芬兰、`hi`=印地、`hu`=匈牙利、`mr`=马拉地、`sk`=斯洛伐克、`sv`=瑞典，以及带 `-rIN` 区域后缀的印度语言 `kn-rIN`=卡纳达、`ml-rIN`=马拉雅拉姆、`pa-rIN`=旁遮普、`ta-rIN`=泰米尔、`te-rIN`=泰卢固、`ur-rIN`=乌尔都。
+
+注意 `in`=印尼语（Android 码，不是 `id`）、`zh-rCN`/`zh-rTW`、`*-rIN` 都是 Android 资源码。**一律按 `target_langs` 给的码翻译、输出 key 与之一字不差**（含 `zh-rCN`/`zh-rTW`/`in`/`*-rIN`），不要改写成 ISO 码。
 
 ---
 
