@@ -1,0 +1,16 @@
+# 本地 Claude 设置
+.claude/
+
+# macOS
+.DS_Store
+
+# app 写入的运行时版本标记，不入库
+.tester-app-version
+
+# Python
+__pycache__/
+*.pyc
+
+# 临时输入/输出（联调时可能落在目录里）
+template-translate-*.json
+template-translate-*.result.json
